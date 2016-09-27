@@ -1,0 +1,92 @@
+html,
+body {
+  font-family: Helvetica, Sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100%;
+}
+
+#pageTitle{
+  position: fixed;
+  width: 40%;
+  top: 20px;
+  left: 49%;
+}
+
+#search {
+  font-size: 20px;
+  position: fixed;
+  height: 30px;
+  width: 20%;
+  top: 72px;
+  left: 50%;
+}
+
+#list-view {
+  background-color: #fff;
+  font-size: 15px;
+  height: 12%;
+  width: 20%;
+  position: fixed;
+  overflow: auto;
+  top: 110px;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+#error {
+  position: fixed;
+  width: 20%;
+  top: 350px;
+  left: 5%;
+}
+
+@media only screen and (max-width: 650px) {
+    h2 {
+      font-size: 12px;
+    }
+    #pic {
+      display: none;
+    }
+
+    #pageTitle {
+    width: 30%;
+    position: fixed;
+    top: 0px;
+    left: 5%;
+    }
+
+    #search {
+    font-size: 8px;
+    height: 30px;
+    width: 29%;
+    position: fixed;
+    left: 5%;
+    top: 40px;
+    }
+
+    #list-view {
+    font-size: 15px;
+    background-color: #fff;
+    position: fixed;
+    height:27%;
+    width: 30%;
+    top: 80px;
+    left: 5%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    }
+
+    #error {
+    position: fixed;
+    top: 320px;
+    left: 5%;
+    width: 30%;
+    }
+}
