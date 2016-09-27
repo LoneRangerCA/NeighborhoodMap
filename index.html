@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Concord, CA Hotels">
+		<title>Concord, CA Hotels</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<!-- <div id ="map"></div> -->
+		<div id="map" data-bind="click: hideMapElements"></div>
+			<div id="pageTitle"><h2>Concord, CA Hotels</h2></div>
+
+      <div data-bind="css: mapNavStatus">
+				<input id="search" placeholder="Search" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
+				<div id="list-holder">
+					<ul id="list-view" data-bind="foreach: visible">
+						<li id="list-name" data-bind="text: name, click: $parent.showInfo"></li>
+					</ul>
+				</div>
+		</div>
+		<div id="error"></div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+
+
+<!--Google API Key AIzaSyBrHuF39ckd0X4alaLXmgjCZIzdYsNbJk0 -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrHuF39ckd0X4alaLXmgjCZIzdYsNbJk0&callback=initMap"
+  type="text/javascript"></script>
+  </body>
+
+</html>
