@@ -90,3 +90,71 @@ body {
     width: 30%;
     }
 }
+@media only screen and (max-width: 650px) {
+
+    h2 {
+      font-size: 12px;
+    }
+
+    /*#iWindow {
+      height: 150px;
+    }*/
+
+    #pic {
+      display: none;
+    }
+
+    #hamburger {
+    position: fixed;
+    left: 85%;
+    right: 0;
+    top: 0;
+    width: 40px;
+    }
+
+    svg {
+    display: block;
+    width: 40px;
+    fill: #000;
+    }
+
+    #pageTitle {
+    position: fixed;
+    top: 0px;
+    width: 30%;
+    left: 5%;
+    }
+
+    .navClosed {
+      display: none;
+    }
+
+    #search {
+    position: fixed;
+    left: 5%;
+    top: 40px;
+    height: 30px;
+    width: 29%;
+    font-size: 8px;
+    }
+
+    #list-view {
+    position: fixed;
+    height:27%;
+    overflow: auto;
+    top: 80px;
+    left: 5%;
+    width: 30%;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    }
+
+    #error {
+    position: fixed;
+    top: 320px;
+    left: 5%;
+    width: 30%;
+    }
+}
